@@ -1,0 +1,3 @@
+"au VimEnter *  NERDTree
+map <silent> <C-n>t :NERDTreeToggle<CR>
+set relativenumber
