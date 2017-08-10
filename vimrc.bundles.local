@@ -1,3 +1,7 @@
 Plug 'scrooloose/nerdtree'
 Plug 'moll/vim-node'
 Plug 'jelera/vim-javascript-syntax'
+Plug 'noahfrederick/vim-laravel'
+Plug 'kristijanhusak/vim-hybrid-material'
+Plug 'Valloric/YouCompleteMe'
+Plug 'terryma/vim-multiple-cursors'
