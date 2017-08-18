@@ -3,6 +3,12 @@ Plug 'moll/vim-node'
 Plug 'jelera/vim-javascript-syntax'
 Plug 'noahfrederick/vim-laravel'
 Plug 'kristijanhusak/vim-hybrid-material'
-Plug 'Valloric/YouCompleteMe'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'jiangmiao/auto-pairs'
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'tomtom/tlib_vim'
+Plug 'garbas/vim-snipmate'
+Plug 'StanAngeloff/php.vim'
+
+" Optional:
+Plug 'honza/vim-snippets'
