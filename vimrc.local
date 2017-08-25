@@ -1,3 +1,4 @@
+let mapleader=","
 map <silent> <C-n>t :NERDTreeToggle<CR>
 
 " Mappings to move lines
@@ -17,6 +18,9 @@ set relativenumber
 set clipboard=unnamed
 
 let NERDTreeShowHidden=1
+" PSR@ php-cs-fixer
+let g:php_cs_fixer_rules = "@PSR2"
+nnoremap <leader>pf :call PhpCsFixerFixFile()<CR>
 
 " php.vim
 function! PhpSyntaxOverride()
@@ -47,3 +51,6 @@ set list listchars=tab:\ \ ,trail:·
 set nowrap       "Don't wrap lines
 set linebreak    "Wrap lines at convenient points
 au FileType php setl shiftwidth=4 softtabstop=4 tabstop=4
+
+" Highlight color
+highlight MatchParen cterm=none ctermbg=38 ctermfg=Green
