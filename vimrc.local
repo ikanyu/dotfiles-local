@@ -1,6 +1,10 @@
 let mapleader=","
 map <silent> <C-n>t :NERDTreeToggle<CR>
 :nnoremap <leader>ne :NERDTreeFocus<CR>
+set ic
+
+"Reload all vim buffer
+nnoremap <leader>rv :windo e<CR>
 
 " Mappings to move lines
 " Normal mode
