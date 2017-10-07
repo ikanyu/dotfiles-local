@@ -1,8 +1,46 @@
+alias art='php artisan'
+
 alias vup='vagrant up'
 alias vssh='vagrant ssh'
+
+# git alias
+alias g='git'
+
+alias glg='git log'
+
+alias ga='git add'
+alias gaa='git add --all'
+
+alias gb='git branch'
+alias gba='git branch -a'
+alias gbd='git branch -d'
+alias gbdd='git branch -D'
+
+alias gcb='git checkout -b'
+alias gcm='git commit -m'
+alias gca='git commit --amend'
+alias gco='git checkout'
+alias gcoo='git checkout origin/master --'
+alias gpl='git pull'
+
+alias gp='git push'
+
+alias grbi='git rebase -i'
+
+alias gst='git status'
+
+alias grbm='git pull --rebase origin master'
+
 #export TERM=xterm-256color
 # Base16 Shell
 #BASE16_SHELL="$HOME/.config/base16-shell/base16-material.dark.sh"
 ##[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 BASE16_SHELL=$HOME/.config/base16-shell/
 [ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
+
+# copied from zshrc
+export PATH="$HOME/.composer/vendor/bin:$PATH"
+#eval "$(rbenv init - --no-rehash)"
+
+
+# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

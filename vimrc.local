@@ -1,10 +1,18 @@
 let mapleader=","
 map <silent> <C-n>t :NERDTreeToggle<CR>
-:nnoremap <leader>ne :NERDTreeFocus<CR>
+nnoremap <leader>ne :NERDTreeFocus<CR>
+nnoremap <leader>lo :NERDTreeFind<CR>
+
 set ic
 
 "Reload all vim buffer
 nnoremap <leader>rv :windo e<CR>
+
+"Copy current file path
+nnoremap <leader>fp :let @+=expand('%:p')<CR>
+
+" fzf search functoin
+nnoremap <leader>\ :FZF<CR>
 
 " Mappings to move lines
 " Normal mode
@@ -25,7 +33,7 @@ set clipboard=unnamed
 
 let NERDTreeShowHidden=1
 " PSR@ php-cs-fixer
-let g:php_cs_fixer_rules = "@PSR2"
+let g:php_cs_fixer_rules = "@PSR2,no_unused_imports"
 nnoremap <leader>pf :call PhpCsFixerFixFile()<CR>
 
 " php.vim
