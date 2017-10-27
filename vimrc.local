@@ -8,6 +8,9 @@ set ic
 "Reload all vim buffer
 nnoremap <leader>rv :windo e<CR>
 
+"Reload vimrc
+nmap <leader>vr :so ~/dotfiles-local/vimrc.local<CR>
+
 "Copy current file path
 nnoremap <leader>fp :let @+=expand('%:p')<CR>
 
