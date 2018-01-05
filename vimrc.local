@@ -3,7 +3,14 @@ map <silent> <C-n>t :NERDTreeToggle<CR>
 nnoremap <leader>ne :NERDTreeFocus<CR>
 nnoremap <leader>lo :NERDTreeFind<CR>
 
+"Macvim skip colorscheme
+let macvim_skip_colorscheme=1
+
 set ic
+"Boost speed
+set re=1
+set ttyfast
+set lazyredraw
 
 "Reload all vim buffer
 nnoremap <leader>rv :windo e<CR>
@@ -32,6 +39,12 @@ vnoremap <C-j> :m '>+1<CR>gv=gv
 vnoremap <C-k> :m '<-2<CR>gv=gv
 
 set relativenumber
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+augroup END
+
 set clipboard=unnamed
 
 let NERDTreeShowHidden=1
