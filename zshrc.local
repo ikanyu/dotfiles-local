@@ -3,7 +3,8 @@ alias be='bundle exec'
 alias ber='bundle exec rspec'
 alias rs='bundle exec rails s'
 alias rc='bundle exec rails c'
-alias dbreset='rake db:drop && rake db:create && rake db:migrate && rake db:migrate RAILS_ENV=test && rake db:seed'
+alias bus='bundle update --source '
+alias dbreset='bundle exec rake db:drop && bundle exec rake db:create && bundle exec rake db:migrate && bundle exec rake db:migrate RAILS_ENV=test && bundle exec rake db:seed'
 
 # git alias
 alias g='git'
@@ -43,6 +44,7 @@ BASE16_SHELL=$HOME/.config/base16-shell/
 
 # copied from zshrc
 export PATH="$HOME/.composer/vendor/bin:$PATH"
+export NODE_PATH='/usr/local/lib/node_modules'
 #eval "$(rbenv init - --no-rehash)"
 
 
