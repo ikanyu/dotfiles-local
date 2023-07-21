@@ -1,3 +1,12 @@
+export LC_ALL=en_US.UTF-8
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export GEMFURY_KEY=Eg9ly-mOH7qPOv332DT1soPrE4svIcRM
+export FONT_AWESOME_TOKEN=32548822-A2F9-4665-893A-2E279A3BA9B4
+
 # rails alias
 alias be='bundle exec'
 alias ber='bundle exec rspec'
@@ -23,10 +32,12 @@ alias gcb='git checkout -b'
 alias gcm='git commit -m'
 alias gca='git commit --amend'
 alias gco='git checkout'
+alias gcoa='git checkout -- .'
 alias gcoo='git checkout origin/master --'
 alias gpl='git pull'
 
 alias gp='git push'
+alias gpf='git push -f'
 
 alias grbi='git rebase -i'
 
@@ -35,6 +46,7 @@ alias gst='git status'
 alias grbd='git checkout develop; git pull origin develop; git checkout -; git rebase develop;'
 alias grbm='git pull --rebase origin master'
 
+#
 #export TERM=xterm-256color
 # Base16 Shell
 #BASE16_SHELL="$HOME/.config/base16-shell/base16-material.dark.sh"
@@ -52,3 +64,4 @@ export NODE_PATH='/usr/local/lib/node_modules'
 
 export PATH="$HOME/.bin:$PATH"
 source /Users/wenyu/.asdf/asdf.sh
+export PATH=/opt/homebrew/bin:$PATH

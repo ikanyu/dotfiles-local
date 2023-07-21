@@ -1,3 +1,4 @@
+let g:snipMate = { 'snippet_version' : 1 }
 let mapleader=","
 map <silent> <C-n>t :NERDTreeToggle<CR>
 nnoremap <leader>ne :NERDTreeFocus<CR>
@@ -8,9 +9,9 @@ let macvim_skip_colorscheme=1
 
 set ic
 "Boost speed
-set re=1
 set ttyfast
 set lazyredraw
+set re=2
 
 "Reload all vim buffer
 nnoremap <leader>rv :windo e<CR>
@@ -79,3 +80,14 @@ au FileType php setl shiftwidth=4 softtabstop=4 tabstop=4
 
 " Highlight color
 highlight MatchParen cterm=none ctermbg=38 ctermfg=Green
+
+" Fix vue highlight stop working
+autocmd FileType vue syntax sync fromstart
+
+" Mapping for vim-test
+nmap <silent> t<C-l> :TestNearest<CR>
+nmap <silent> t<C-t> :TestFile<CR>
+nmap <silent> t<C-s> :TestSuite<CR>
+" nmap <silent> t<C-l> :TestLast<CR>
+
+nmap <silent> t<C-g> :TestVisit<CR>

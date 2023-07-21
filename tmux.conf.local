@@ -1,3 +1,16 @@
+#tmux plugin manager
+# List of plugins
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-sensible'
+
+#install tmux-resurrect
+set -g @plugin 'tmux-plugins/tmux-resurrect'
+
+# Other examples:
+# set -g @plugin 'github_username/plugin_name'
+# set -g @plugin 'git@github.com/user/plugin'
+# set -g @plugin 'git@bitbucket.com/user/plugin'
+
 # remap prefix to Control + a
 set -g prefix C-a
 unbind C-b
@@ -11,5 +24,4 @@ bind r source-file ~/.tmux.conf
 unbind ^A
 bind ^A select-pane -t :.+
 
-# set mouse mode
-set-window-option -g mode-mouse on
+run '~/.tmux/plugins/tpm/tpm'

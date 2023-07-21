@@ -10,3 +10,5 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'honza/vim-snippets'
 Plug 'garbas/vim-snipmate'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'posva/vim-vue'
+Plug 'janko-m/vim-test'
